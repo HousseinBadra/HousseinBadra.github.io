@@ -13,7 +13,7 @@
   width:100%;
   height:5px;
   top:0;
-  background:#FFF;
+  background:#000;
   transition:all 0.7s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
