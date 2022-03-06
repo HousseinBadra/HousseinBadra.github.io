@@ -73,7 +73,8 @@ body{
 .card:hover{
   transform:rotateY(180deg);
 }
-
+.card:hover i{
+  display:none;}
 /*.back div div{
   position:fixed;
   top:0;
