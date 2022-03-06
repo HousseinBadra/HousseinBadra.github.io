@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:wght@100&family=Shizuru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type='text/css' href="navbarabout.css">
+  <link rel="stylesheet" type='text/css' href="canvas.css">
+  <link rel="stylesheet" type='text/css' href="stylesabout.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <title>About me</title>
+</head>
+<body>
+  <div class="main-container">
+<div class="card bug">
+  <div class="front">
+    <i class="bi bi-fingerprint oo"></i>
+  </div>
+  <div class="back">
+    <div style='width:100%;height:100% ;position:relative'>
+      <div class="bgclip"></div>
+      <h2>Who I'am?</h2>
+      <p>
+      I'am Houssein Badra ,a 17 years old highschool student located in Lebanon,willing to study computer engineering after graduation</p>
+      <hr>
+      <p class="forspace">Mostly intrested in coding, chess, fitness also in economics and politics. </p>
+      <hr>
+      <p>I'am someone who loves spending time with family and friends,loves learning new things,always optimistic,extremly dedicated and hardworking</p>
+      </div>
+      </div>
+  </div>
+</div>
+
+  <div class="btn" >
+    <div class="line line1"></div>
+    <div class="line line2"></div>
+    <div class="line line3"></div>
+  </div>
+  <div class="menu">
+    <div class="menu-con overlay" style='background:IndianRed'><p><a href="index.html"><span>H</span>ome</a></div>
+    <div class="menu-con overlay" style='background:rgb(160,160,170)'><a href="#"><span>A</span>bout me</a></div>
+    <div class="menu-con" style='background:teal'><a href="project.html"><span>P</span>rojects</a></div> 
+    <div class="menu-con" style='background:rgb(70,70,70)'><a href="contact.html"><span>C</span>ontact me</a></div>
+    </div>
+    <canvas>
+      
+    </canvas>
+    <script src="canvas.js"></script>
+<script>
+  
+const btn=document.getElementsByClassName('btn')[0]
+btn.addEventListener('click',()=>{
+  btn.classList.toggle('hover')
+  if(bug.classList.contains('bug')){
+    bug.classList.remove('bug')
+  }
+  else{
+    setTimeout(()=>{bug.classList.add('bug')},500)
+  }
+  todrop[0].classList.toggle('droped')
+  setTimeout(()=>{todrop[1].classList.toggle('droped')},100)
+    setTimeout(()=>{todrop[2].classList.toggle('droped')},200)
+  setTimeout(()=>{todrop[3].classList.toggle('droped')},300)
+
+})
+const todrop=document.querySelectorAll('.menu-con')
+const bug=document.querySelector('.card')
+
+</script>
+</body>
+
+</html>

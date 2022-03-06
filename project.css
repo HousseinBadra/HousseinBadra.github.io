@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto:wght@100&family=Shizuru&family=Smooch+Sans:wght@200&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  font-size:20px;
+}
+ body{
+   min-height:100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Shizuru', cursive;font-family: 'Smooch Sans', sans-serif;
+    background:linear-gradient(#373b44,#4286f4);
+ }
+.main{
+  width:100%;
+  height:100%;
+  padding:2em;
+  color:#FFF;
+}
+.skills{
+  
+  margin-bottom:1em;
+}
+.main h1{
+  font-size:2rem;
+  text-align:center;
+  margin:1em auto;
+}
+.skills h2{
+  font-size:1.5rem;
+  text-align:center;
+  margin-bottom:.5em;
+}
+.skills p{
+  padding:.5em;
+  text-align:center;
+}
+
+.projects h2{
+  text-align:center;
+  padding:0 .5em;
+  margin-bottom:1em;
+}
+.projects-container{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:5px
+  
+}
+.item{
+  height:50vh;
+  position:relative;
+transition:all 1s;
+z-index:1;
+}
+.cover{
+
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-size:100% 100%;
+  z-index:1;
+}
+.description{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  padding:1em;
+  background:transparent;
+  display:flex;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.description p{
+  text-align:center;
+  font-size:1.25em;
+  font-weight:500;
+  color:white;
+}
+
+.item:hover .cover{
+  z-index:-1;
+  background:transparent;
+}
+
+.snake{
+  background-image:url('snake.jpg');
+}
+.invader{
+  background-image:url('invader.jpg');
+}
+i{
+  font-size:2em;
+  color:#000;
+  animation-name:scaler;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes scaler{
+  50%{transform:scale(1.3)}
+}
+
+@media screen and (min-width:600px){
+  html{
+    font-size:25px;
+  }
+  .projects-container{
+    grid-template-columns:1fr 1fr;
+    gap:10px
+  }
+  .item{
+    height:33vh;
+  }
+}
+
+@media screen and (min-width:900px){
+  html{
+    font-size:30px;
+  }
+  .projects-container{
+    grid-template-columns:1fr 1fr 1fr;
+    
+  }
+  .item{
+    height:25vh;
+  }
+}

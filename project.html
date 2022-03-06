@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects</title>
+  <link rel="stylesheet" href="navbarabout2.css" type='text/css'>
+  <link rel="stylesheet" href="project.css" type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+   <div class="btn" >
+    <div class="line line1"></div>
+    <div class="line line2"></div>
+    <div class="line line3"></div>
+  </div>
+  <div class="menu hide">
+    <div class="menu-con overlay" style='background:IndianRed'><p><a href="index.html"><span>H</span>ome</a></div>
+    <div class="menu-con overlay" style='background:rgb(160,160,170)'><a href="about.html"><span>A</span>bout me</a></div>
+    <div class="menu-con" style='background:teal'><a href="#"><span>P</span>rojects</a></div> 
+    <div class="menu-con" style='background:rgb(70,70,70)'><a href="contact.html"><span>C</span>ontact me</a></div>
+    </div>
+  <main class="main">
+  <h1>My work</h1>
+<section class="skills">
+  <h2>Technologies I use</h2>
+  <p>A frontend developer with depth knowledge of html/css/Sass/boostrap and modern ES6 javascript also a proficent python developer witch some knowledge in data analytics with pandas/numpy/matplotlib/sklearn  </p>
+</section>
+<section class="projects">
+  <h2>Check out some cool projects I've worked on</h2>
+  <div class="projects-container">
+ <div class="item">
+   <div class='snake cover'>
+   </div>
+   <div class="description">
+     <p>A simple nokia 310 snake game created with html/css grid and javascript</p>
+     <p><a href='https://github.com/HousseinBadra/snake-game'><i class="bi bi-arrow-return-right"></i><i class="bi bi-github"></i></a></p>
+   </div>
+ </div> 
+  <div class="item">
+   <div class=' invader cover'>
+   </div>
+   <div class="description">
+     <p>A simple space invaders game created with html/css grid and javascript working on a canvas version with good graphics and more options</p>
+     <p><a href='https://github.com/HousseinBadra/space-ivaders'><i class="bi bi-arrow-return-right"></i><i class="bi bi-github"></i></a></p>
+   </div>
+ </div> 
+ </div>
+</section>
+</main>
+<script>const btn=document.getElementsByClassName('btn')[0]
+btn.addEventListener('click',()=>{
+  btn.classList.toggle('hover')
+  if(menu.classList.contains('hide')){
+    menu.classList.remove('hide')
+  }
+  else{
+    setTimeout(()=>{menu.classList.add('hide')},500)
+  }
+  setTimeout(()=>{todrop[0].classList.toggle('droped')},10)
+  setTimeout(()=>{todrop[1].classList.toggle('droped')},100)
+    setTimeout(()=>{todrop[2].classList.toggle('droped')},200)
+  setTimeout(()=>{todrop[3].classList.toggle('droped')},300)
+
+})
+const todrop=document.querySelectorAll('.menu-con')
+const menu=document.querySelectorAll('.menu')[0]
+</script>
+</body>
+
+</html>
+

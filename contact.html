@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact me</title>
+  <link rel="stylesheet" href="contact.css" type='text/css'>
+  <link rel="stylesheet" href="navbarabout1.css" type='text/css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+   <div class="btn" >
+    <div class="line line1"></div>
+    <div class="line line2"></div>
+    <div class="line line3"></div>
+  </div>
+  <div class="menu">
+    <div class="menu-con overlay" style='background:IndianRed'><p><a href="index.html"><span>H</span>ome</a></div>
+    <div class="menu-con overlay" style='background:rgb(160,160,170)'><a href="about.html"><span>A</span>bout me</a></div>
+    <div class="menu-con" style='background:teal'><a href="project.html"><span>P</span>rojects</a></div> 
+    <div class="menu-con" style='background:rgb(70,70,70)'><a href="#"><span>C</span>ontact me</a></div>
+    </div>
+  <section class="contact bug">
+    <div class="content">
+      <h2>Get in touch</h2>
+      <p>Feel free to send me your feedback or to contact me</p>
+    </div>
+    <div class="container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon">
+          <i class="bi bi-geo-alt"></i>
+          </div>
+          <div class="text">
+          <h3>Adress</h3>
+          <p>Ali-el Nahri<br> Lebanon</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+          <i class="bi bi-telephone-x"></i>
+          </div>
+          <div class="text">
+          <h3>Phone</h3>
+          <p>+961 81 880486</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+          <i class="bi bi-envelope"></i>
+          </div>
+          <div class="text">
+          <h3>Gmail</h3>
+          <p>Badrahsein@gmail.com</p>
+          </div>
+        </div>
+        </div>
+      <div class="contactform">
+        <form>
+          <h2>Send a message</h2>
+          <div class="inputBox">
+            <input type="text" class="ooo" required>
+            <span>Full name</span>
+          </div>
+         <div class="inputBox">
+            <input type="email" class="ooo" required>
+            <span>Email</span>
+          </div>
+         <div class="inputBox">
+            <textarea  class="ooo" required></textarea>
+            <span>Type your message</span>
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Send" id='oo'>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="media">
+      <div class="media-icon">
+        <a href="https://www.facebook.com/hsein.badra"> <i class="bi bi-facebook m1"></i></a>
+      </div>  
+      <div class="media-icon">
+        <a href="https://github.com/HousseinBadra">   <i class="bi bi-github m2"></i></a>
+      </div> 
+      <div class="media-icon">
+        
+        <a href="https://www.instagram.com/hssein_badra/"><i class="bi bi-instagram m3"></i></a>
+      </div>
+      <div class="media-icon">
+        <a href="https://www.linkedin.com/in/hsein-badra-943879214">   <i class="bi bi-linkedin m4"></i></a>
+     
+      </div>
+    </div>
+  </section>
+   
+<script>
+const form=document.querySelector('form')
+
+  const oo=document.getElementById('oo')
+  oo.addEventListener('click',(e)=>{
+    e.preventDefault()
+    const elems=document.querySelectorAll('.ooo')
+    elems.forEach((elem)=>{
+      
+      elem.value=''
+    })
+    alert('Still working on the contact form')
+  })
+  const btn=document.getElementsByClassName('btn')[0]
+btn.addEventListener('click',()=>{
+  btn.classList.toggle('hover')
+  if(bug.classList.contains('bug')){
+    bug.classList.remove('bug')
+  }
+  else{
+    setTimeout(()=>{bug.classList.add('bug')},500)
+  }
+  todrop[0].classList.toggle('droped')
+  setTimeout(()=>{todrop[1].classList.toggle('droped')},100)
+    setTimeout(()=>{todrop[2].classList.toggle('droped')},200)
+  setTimeout(()=>{todrop[3].classList.toggle('droped')},300)
+
+})
+const todrop=document.querySelectorAll('.menu-con')
+const bug=document.querySelector('.contact')
+</script>
+</body>
+
+</html>
