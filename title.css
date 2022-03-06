@@ -90,7 +90,7 @@ border-top:3px solid #FFF;
 }
 @keyframes movedown{
   50%{
-    transform:translateY(-25vmin);
+    transform:translateY(-15vmin);
   }
   100%{
     transform:translateY(0);}
